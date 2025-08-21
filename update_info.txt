@@ -1,5 +1,5 @@
-latest_version=0.0.2
-latest_version_code=2
+latest_version=0.0.1
+latest_version_code=1
 download_url=https://www.123684.com/s/jA3ZVv-SOx6H
-update_log=版本 0.0.2 (2025-08-23)\n\n更新内容:\n• 修复了已知问题\n• 优化了性能\n• 新增适配应用• 袋鼠VPN - 无限重置时长 (全版本通杀)\n• Top浏览器 - 解锁会员功能 (全版本通杀)\n• 缘梦影视 - 解锁VIP内容 (全版本通杀)\n• 黑石VPN - 无需清除数据刷新会员 (全版本通杀)\n• OK影视2 - 解除观看限制 (全版本通杀)\n• 追梦视频 - 去除广告 (全版本通杀)\n• 小熊录屏 - 去除会员限制 (版本: 2.4.8.3)
+update_log=版本 0.0.2 (2025-08-23)\n\n更新内容:\n• 修复了已知问题\n• 优化了性能\n• 新增适配应用
 
