@@ -1,4 +1,4 @@
-latest_version=0.0.1
-latest_version_code=1
+latest_version=0.0.2
+latest_version_code=2
 download_url=https://www.123684.com/s/jA3ZVv-SOx6H
-update_log=版本 0.0.1 (2025-08-23)\n\n更新内容:\n• 修复了已知问题\n• 优化了性能\n• 新增适配应用
+update_log=版本 0.0.2 (2025-08-23)\n\n更新内容:\n• 修复了已知问题\n• 优化了性能\n• 新增适配应用
