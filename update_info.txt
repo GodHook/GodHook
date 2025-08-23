@@ -1,5 +1,5 @@
-latest_version=0.0.1
-latest_version_code=1
+latest_version=0.0.2
+latest_version_code=2
 download_url=https://www.123684.com/s/jA3ZVv-SOx6H
 update_log=版本 0.0.2 (2025-08-23)\n\n更新内容:\n\n适配应用\n新增:\n•漫漫国-解锁永久会员(版本:3.3.0)\n•追番达人-解锁永久会员(版本:3.5.9)\n•零度影视-去除广告(版本:1.1.2)\n•TubeVPN-无限重置时长(理论通杀)\n•紫晶草视频-解锁永久会员(版本: 4.6.0)\n\n扩展功能\n拦截广告:\n•新增拦截广告功能(目前能拦截的广告较少),勾选需要拦截广告的软件即可\n\n修复:\n•修复模块激活问题\n\n\n
 
