@@ -1,0 +1,251 @@
+{
+  "version": "2.1",
+  "description": "FCAD 模块动态广告拦截规则",
+  "last_updated": "2023-10-27",
+  
+  "ad_networks": {
+    "com.google.android.gms.ads": [
+      "AdView",
+      "InterstitialAd",
+      "RewardedAd",
+      "RewardedInterstitialAd",
+      "AdLoader",
+      "AdRequest",
+      "AdSize",
+      "AdManagerAdView",
+      "AdManagerInterstitialAd"
+    ],
+    "com.facebook.ads": [
+      "AdView",
+      "InterstitialAd",
+      "NativeAd",
+      "NativeBannerAd",
+      "RewardedVideoAd",
+      "AdSettings",
+      "AudienceNetworkAds"
+    ],
+    "com.unity3d.ads": [
+      "UnityAds",
+      "IUnityAdsListener",
+      "IUnityAdsLoadListener",
+      "IUnityAdsShowListener"
+    ],
+    "com.applovin.ads": [
+      "AppLovinAdView",
+      "AppLovinInterstitialAd",
+      "AppLovinRewardedAd",
+      "AppLovinSdk"
+    ],
+    "com.bytedance.sdk.openadsdk": [
+      "TTAdConfig",
+      "TTAdNative",
+      "TTAdManager",
+      "TTFullScreenVideoAd",
+      "TTRewardVideoAd",
+      "TTBannerAd"
+    ],
+    "com.qq.e.ads": [
+      "BannerAD",
+      "InterstitialAD",
+      "NativeAD",
+      "RewardVideoAD"
+    ],
+    "com.baidu.mobads": [
+      "AdView",
+      "InterstitialAd",
+      "RewardVideoAd"
+    ],
+    "com.sigmob.windad": [
+      "WindAdOptions",
+      "WindAdRequest",
+      "WindRewardVideoAd",
+      "WindSplashAd"
+    ],
+    "com.ironsource.adapters": [
+      "IronSource",
+      "SupersonicAds"
+    ],
+    "com.vungle.ads": [
+      "BannerAd",
+      "InterstitialAd",
+      "RewardedAd"
+    ],
+    "com.tapjoy": [
+      "Tapjoy",
+      "TJPlacement",
+      "TJConnectListener"
+    ],
+    "com.adcolony": [
+      "AdColony",
+      "AdColonyInterstitial",
+      "AdColonyRewardListener"
+    ],
+    "com.mopub.mobileads": [
+      "MoPubView",
+      "MoPubInterstitial",
+      "MoPubRewardedVideos"
+    ],
+    "com.inmobi.ads": [
+      "InMobiBanner",
+      "InMobiInterstitial",
+      "InMobiNative"
+    ],
+    "com.startapp.ads": [
+      "StartAppAd",
+      "StartAppSDK"
+    ],
+    "com.amazon.device.ads": [
+      "ADBannerAd",
+      "ADInterstitialAd"
+    ],
+    "com.pgl.sys.ces": [
+      "AdMetaManager"
+    ],
+    "com.kwad.sdk": [
+      "KsAdSDK",
+      "KsRewardVideoAd",
+      "KsFullScreenVideoAd"
+    ]
+  },
+  
+  "ad_methods": [
+    "loadAd",
+    "show",
+    "init",
+    "initialize",
+    "onAdLoaded",
+    "onAdOpened",
+    "onAdClicked",
+    "onAdClosed",
+    "onAdFailedToLoad",
+    "onAdFailedToShow",
+    "onAdLeftApplication",
+    "onAdImpression",
+    "onRewarded",
+    "onUserEarnedReward",
+    "onVideoCompleted",
+    "cache",
+    "display",
+    "load",
+    "requestAd",
+    "getAd",
+    "loadData",
+    "fetchAd",
+    "loadInterstitial",
+    "loadRewardedVideo",
+    "showInterstitial",
+    "showRewardedVideo",
+    "setAdListener",
+    "setAdLoadListener",
+    "setAdShowListener"
+  ],
+  
+  "ad_keywords": [
+    "ad",
+    "ads",
+    "advert",
+    "adv",
+    "banner",
+    "interstitial",
+    "reward",
+    "promo",
+    "sponsor",
+    "advertising",
+    "mediation",
+    "mraid",
+    "splash",
+    "fullscreen",
+    "preroll",
+    "midroll",
+    "postroll",
+    "offerwall",
+    "monetization",
+    "pubservice",
+    "gdt",
+    "ttad",
+    "ksad",
+    "sigmob"
+  ],
+  
+  "ad_domains": [
+    "doubleclick.net",
+    "googleadservices.com",
+    "googlesyndication.com",
+    "google-analytics.com",
+    "adcolony.com",
+    "ads.facebook.com",
+    "tapjoy.com",
+    "unityads.com",
+    "vungle.com",
+    "mopub.com",
+    "amazon-adsystem.com",
+    "inmobi.com",
+    "startappservice.com",
+    "applovin.com",
+    "ironsrc.com",
+    "sigmob.com",
+    "kwad.com",
+    "bytecdn.cn",
+    "bytedance.com",
+    "bdstatic.com",
+    "tanx.com",
+    "aliyuncs.com",
+    "umeng.com",
+    "umengcloud.com",
+    "ucweb.com",
+    "uc.cn",
+    "qq.com",
+    "gtimg.com",
+    "qpic.cn"
+  ],
+  
+  "splash_activity_patterns": [
+    ".*Splash.*",
+    ".*AdActivity",
+    ".*Launch.*",
+    ".*Welcome.*",
+    ".*Guide.*",
+    ".*MainActivity",
+    ".*ads.*",
+    ".*splash.*",
+    ".*tt_splash.*",
+    ".*ks_splash.*",
+    ".*gdt_splash.*"
+  ],
+  
+  "reinforcement_classes": [
+    "com.stub.StubApp",
+    "com.tencent.StubShell.TxAppEntry",
+    "s.h.e.l.l.S",
+    "com.secshell.secshell.ApplicationWrapper",
+    "com.qihoo.util.Loader",
+    "com.ali.tg.tgbridge.TGBridge",
+    "com.ijiami.v7.SecurityApplication",
+    "com.bangcle.andlz.ZApplication",
+    "com.taobao.shell.application",
+    "com.netqi.bapplication",
+    "com.lexun.shell.application"
+  ],
+  
+  "excluded_packages": [
+    "com.pocket.topbrowser",
+    "com.speedplus.daishu",
+    "com.heysocks.android",
+    "com.ymys.tv",
+    "com.tv.ok2",
+    "com.jushispoc.rxjyapp",
+    "com.duapps.recorder",
+    "com.mianyuxiaopu.app",
+    "app.zjc.www",
+    "com.jigongbao.jgbapp",
+    "com.errpbc.bvh",
+    "com.tube.client",
+    "com.instagram.android",
+    "com.facebook.katana",
+    "com.twitter.android",
+    "com.whatsapp",
+    "com.tencent.mm",
+    "com.uc.browser",
+    "com.qihoo.browser"
+  ]
+}
