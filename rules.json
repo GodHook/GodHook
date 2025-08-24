@@ -1,251 +1,641 @@
 {
-  "version": "2.1",
-  "description": "FCAD 模块动态广告拦截规则",
-  "last_updated": "2023-10-27",
+  "version": "4.2",
+  "description": "FCAD 高级广告拦截规则 - 综合多个来源的全面规则集",
+  "last_updated": "2025-08-24",
+  "update_interval_hours": 24,
+  "min_module_version": "3.0",
   
   "ad_networks": {
     "com.google.android.gms.ads": [
-      "AdView",
-      "InterstitialAd",
-      "RewardedAd",
-      "RewardedInterstitialAd",
-      "AdLoader",
-      "AdRequest",
-      "AdSize",
-      "AdManagerAdView",
-      "AdManagerInterstitialAd"
+      "AdView", "InterstitialAd", "RewardedAd", "RewardedInterstitialAd", 
+      "AdLoader", "AdRequest", "AdSize", "AdManagerAdView", "AdManagerInterstitialAd",
+      "SearchAdRequest", "VideoOptions", "ResponseInfo", "AdapterResponseInfo",
+      "AdError", "AdFormat", "AdParam", "AdValue"
     ],
     "com.facebook.ads": [
-      "AdView",
-      "InterstitialAd",
-      "NativeAd",
-      "NativeBannerAd",
-      "RewardedVideoAd",
-      "AdSettings",
-      "AudienceNetworkAds"
+      "AdView", "InterstitialAd", "NativeAd", "NativeBannerAd", "RewardedVideoAd",
+      "AdSettings", "AudienceNetworkAds", "AdSize", "AdError", "AdListener",
+      "NativeAdListener", "RewardedVideoAdListener"
     ],
     "com.unity3d.ads": [
-      "UnityAds",
-      "IUnityAdsListener",
-      "IUnityAdsLoadListener",
-      "IUnityAdsShowListener"
+      "UnityAds", "IUnityAdsListener", "IUnityAdsLoadListener", "IUnityAdsShowListener",
+      "UnityAdsLoadOptions", "UnityAdsShowOptions", "UnityAdsSettings"
     ],
     "com.applovin.ads": [
-      "AppLovinAdView",
-      "AppLovinInterstitialAd",
-      "AppLovinRewardedAd",
-      "AppLovinSdk"
+      "AppLovinAdView", "AppLovinInterstitialAd", "AppLovinRewardedAd", "AppLovinSdk",
+      "AppLovinAdService", "AppLovinAdDisplayListener", "AdLoadListener",
+      "AppLovinMediationService", "AppLovinAd", "AppLovinAdSize"
     ],
     "com.bytedance.sdk.openadsdk": [
-      "TTAdConfig",
-      "TTAdNative",
-      "TTAdManager",
-      "TTFullScreenVideoAd",
-      "TTRewardVideoAd",
-      "TTBannerAd"
+      "TTAdConfig", "TTAdNative", "TTAdManager", "TTFullScreenVideoAd", "TTRewardVideoAd",
+      "TTBannerAd", "TTNativeExpressAd", "TTAdSdk", "TTAdConstant", "TTAdDislike",
+      "TTImage", "TTNativeAd", "TTSplashAd"
     ],
     "com.qq.e.ads": [
-      "BannerAD",
-      "InterstitialAD",
-      "NativeAD",
-      "RewardVideoAD"
+      "BannerAD", "InterstitialAD", "NativeAD", "RewardVideoAD", "SplashAD",
+      "GDTADManager", "GDTSDKConfig", "GDTAction", "GDTAppDownloadStatus",
+      "GDTAppDownloadTracker", "GDTSDKEnum"
     ],
     "com.baidu.mobads": [
-      "AdView",
-      "InterstitialAd",
-      "RewardVideoAd"
+      "AdView", "InterstitialAd", "RewardVideoAd", "BaiduMobAdSetting", "BaiduMobAdNative",
+      "BaiduMobAdRewardVideo", "BaiduMobAdSplash", "BaiduMobFeedAd", "BaiduMobAdVideo"
     ],
     "com.sigmob.windad": [
-      "WindAdOptions",
-      "WindAdRequest",
-      "WindRewardVideoAd",
-      "WindSplashAd"
+      "WindAdOptions", "WindAdRequest", "WindRewardVideoAd", "WindSplashAd", "WindBannerAd",
+      "WindInterstitialAd", "WindAdError", "WindAd", "WindCustomController"
     ],
     "com.ironsource.adapters": [
-      "IronSource",
-      "SupersonicAds"
+      "IronSource", "SupersonicAds", "IronSourceAds", "InterstitialListener", "RewardedVideoListener",
+      "OfferwallListener", "BannerListener", "InitializationListener", "ImpressionDataListener"
     ],
     "com.vungle.ads": [
-      "BannerAd",
-      "InterstitialAd",
-      "RewardedAd"
+      "BannerAd", "InterstitialAd", "RewardedAd", "VungleAds", "BannerAdListener",
+      "InterstitialAdListener", "RewardedAdListener", "VungleError"
     ],
     "com.tapjoy": [
-      "Tapjoy",
-      "TJPlacement",
-      "TJConnectListener"
+      "Tapjoy", "TJPlacement", "TJConnectListener", "TJPlacementListener", "TapjoyAuctionFlags",
+      "TJActionRequest", "TJContentCallback", "TJVideos"
     ],
     "com.adcolony": [
-      "AdColony",
-      "AdColonyInterstitial",
-      "AdColonyRewardListener"
+      "AdColony", "AdColonyInterstitial", "AdColonyRewardListener", "AdColonyAdOptions",
+      "AdColonyAppOptions", "AdColonyAdView", "AdColonyZone"
     ],
     "com.mopub.mobileads": [
-      "MoPubView",
-      "MoPubInterstitial",
-      "MoPubRewardedVideos"
+      "MoPubView", "MoPubInterstitial", "MoPubRewardedVideos", "MoPubRewardedVideoListener",
+      "MoPubInterstitialView", "MoPubReward", "MoPubErrorCode", "MoPubNative"
     ],
     "com.inmobi.ads": [
-      "InMobiBanner",
-      "InMobiInterstitial",
-      "InMobiNative"
+      "InMobiBanner", "InMobiInterstitial", "InMobiNative", "InMobiSplash", "InMobiAudienceBidder",
+      "InMobiAdRequest", "InMobiAdMetaInfo", "InMobiUnifiedIdService"
     ],
     "com.startapp.ads": [
-      "StartAppAd",
-      "StartAppSDK"
+      "StartAppAd", "StartAppSDK", "StartAppBanner", "StartAppInterstitial", "StartAppRewardedVideo",
+      "StartAppNativeAd", "StartAppExchangeClient", "StartAppAdDisplayListener"
     ],
     "com.amazon.device.ads": [
-      "ADBannerAd",
-      "ADInterstitialAd"
+      "ADBannerAd", "ADInterstitialAd", "ADAdLoader", "ADAdRegistration", "ADAd",
+      "ADAdError", "ADTargetingOptions", "ADAdPolicy"
     ],
     "com.pgl.sys.ces": [
-      "AdMetaManager"
+      "AdMetaManager", "AdMetaData", "AdMetaListener", "AdMetaSDK"
     ],
     "com.kwad.sdk": [
-      "KsAdSDK",
-      "KsRewardVideoAd",
-      "KsFullScreenVideoAd"
+      "KsAdSDK", "KsRewardVideoAd", "KsFullScreenVideoAd", "KsInterstitialAd", "KsBannerAd",
+      "KsNativeAd", "KsSplashAd", "KsContentPage", "KsDrawAd"
+    ],
+    "com.ogury.sdk": [
+      "OguryInterstitialAd", "OguryOptinVideoAd", "OguryBannerAd", "OguryChoiceManager",
+      "OguryThumbnailAd", "OguryAssetListener", "OguryOptinVideoListener"
+    ],
+    "com.adjust.sdk": [
+      "Adjust", "AdjustConfig", "AdjustEvent", "AdjustAttribution", "AdjustSessionSuccess",
+      "AdjustSessionFailure", "AdjustEventSuccess", "AdjustEventFailure"
+    ],
+    "com.mintegral.msdk": [
+      "MIntegralSDK", "MIntegralRewardVideoHandler", "MIntegralInterstitialHandler",
+      "MIntegralBannerHandler", "MIntegralNativeHandler", "MIntegralSplashHandler",
+      "MIntegralErrorCode", "MIntegralSettings"
+    ],
+    "com.duapps.ad": [
+      "AdError", "AdListener", "BannerAd", "InterstitialAd", "RewardVideoAd",
+      "NativeAd", "SplashAd", "AdRequest", "AdData"
+    ],
+    "com.smaato.sdk": [
+      "BannerView", "Interstitial", "RewardedAd", "SmaatoSdk", "AdRequestParams",
+      "UserProfile", "SmaatoConfig", "SmaatoError"
+    ],
+    "com.fyber.sdk": [
+      "FyberSettings", "BannerRequester", "InterstitialRequester", "RewardedVideoRequester",
+      "MarketplaceRewardedVideo", "MarketplaceInterstitial", "FyberError"
+    ],
+    "com.yandex.mobile.ads": [
+      "AdRequest", "AdView", "InterstitialAd", "RewardedAd", "NativeAd",
+      "AppInstallAd", "ContentAd", "MobileAds"
+    ],
+    "com.my.target": [
+      "MyTargetView", "InterstitialAd", "RewardedAd", "NativeAd", "NativeBannerAd",
+      "MyTargetManager", "MyTargetConfig", "UserData"
+    ],
+    "com.verizon.ads": [
+      "VASAds", "VASInterstitialAd", "VASBannerAd", "VASNativeAd", "VASErrorInfo",
+      "VASAdFactory", "VASWaterfall", "VASBid"
+    ],
+    "com.chartboost.sdk": [
+      "Chartboost", "CBLocation", "CBPIData", "ChartboostDelegate", "ChartboostCacheError",
+      "ChartboostShowError", "ChartboostClickError"
     ]
   },
   
   "ad_methods": [
-    "loadAd",
-    "show",
-    "init",
-    "initialize",
-    "onAdLoaded",
-    "onAdOpened",
-    "onAdClicked",
-    "onAdClosed",
-    "onAdFailedToLoad",
-    "onAdFailedToShow",
-    "onAdLeftApplication",
-    "onAdImpression",
-    "onRewarded",
-    "onUserEarnedReward",
-    "onVideoCompleted",
-    "cache",
-    "display",
-    "load",
-    "requestAd",
-    "getAd",
-    "loadData",
-    "fetchAd",
-    "loadInterstitial",
-    "loadRewardedVideo",
-    "showInterstitial",
-    "showRewardedVideo",
-    "setAdListener",
-    "setAdLoadListener",
-    "setAdShowListener"
+    "loadAd", "show", "init", "initialize", "onAdLoaded", "onAdOpened", "onAdClicked",
+    "onAdClosed", "onAdFailedToLoad", "onAdFailedToShow", "onAdLeftApplication",
+    "onAdImpression", "onRewarded", "onUserEarnedReward", "onVideoCompleted",
+    "cache", "display", "load", "requestAd", "getAd", "loadData", "fetchAd",
+    "loadInterstitial", "loadRewardedVideo", "showInterstitial", "showRewardedVideo",
+    "setAdListener", "setAdLoadListener", "setAdShowListener", "setRewardedVideoAdListener",
+    "setInterstitialAdListener", "setBannerAdListener", "setNativeAdListener",
+    "setAdMetadataListener", "setMediationListener", "setConsent", "setGDPR",
+    "setCCPA", "setAgeRestricted", "setUserId", "setTestMode", "setDebugMode",
+    "setConsentString", "setRewardListener", "setAdDisplayListener", "setAdRevenueListener",
+    "trackEvent", "trackRevenue", "trackInstall", "trackSession", "trackAdImpression",
+    "trackAdClick", "trackAdRequest", "trackAdResponse", "trackAdLoad", "trackAdShow",
+    "onAdRevenuePaid", "onAdWin", "onAdLoss", "onBidRequest", "onBidResponse",
+    "onAuctionResult", "onAuctionRequest", "onAuctionResponse", "onFillRequest",
+    "onFillResponse", "onAdRefresh", "onAdExpanded", "onAdCollapsed", "onAdResized"
   ],
   
   "ad_keywords": [
-    "ad",
-    "ads",
-    "advert",
-    "adv",
-    "banner",
-    "interstitial",
-    "reward",
-    "promo",
-    "sponsor",
-    "advertising",
-    "mediation",
-    "mraid",
-    "splash",
-    "fullscreen",
-    "preroll",
-    "midroll",
-    "postroll",
-    "offerwall",
-    "monetization",
-    "pubservice",
-    "gdt",
-    "ttad",
-    "ksad",
-    "sigmob"
+    "ad", "ads", "advert", "adv", "banner", "interstitial", "reward", "promo",
+    "sponsor", "advertising", "mediation", "mraid", "splash", "fullscreen",
+    "preroll", "midroll", "postroll", "offerwall", "monetization", "pubservice",
+    "gdt", "ttad", "ksad", "sigmob", "mintegral", "vungle", "applovin", "ironsource",
+    "facebook", "admob", "unity", "adcolony", "mopub", "inmobi", "startapp", "amazon",
+    "pangle", "ogury", "adjust", "onesignal", "yandex", "mytarget", "du", "smaato",
+    "fyber", "adview", "adsize", "adloader", "adrequest", "adresponse", "adlistener",
+    "admetadata", "adrevenue", "aderror", "adtag", "adunit", "adplacement", "adzone",
+    "track", "analytics", "metrics", "attribution", "conversion", "impression",
+    "click", "ctr", "cpm", "cpc", "cpa", "cpi", "cpe", "cps", "dsp", "ssp", "rtb",
+    "bid", "auction", "fill", "demand", "supply", "exchange", "network", "waterfall",
+    "headerbidding", "openrtb", "vast", "vmap", "vpaid", "sdk", "api", "token",
+    "signature", "nonce", "timestamp", "device", "user", "profile", "segment",
+    "audience", "behavior", "interest", "demographic", "geographic", "location",
+    "targeting", "retargeting", "lookalike", "frequency", "recency", "reach",
+    "frequency", "viewability", "verification", "fraud", "invalid", "filter",
+    "block", "whitelist", "blacklist", "policy", "compliant", "consent", "gdpr",
+    "ccpa", "coppa", "lgpd", "privacy", "optin", "optout", "transparency", "choice",
+    "preference", "settings", "configuration", "initialization", "setup", "debug",
+    "test", "staging", "production", "environment", "version", "build", "release"
   ],
   
   "ad_domains": [
-    "doubleclick.net",
-    "googleadservices.com",
-    "googlesyndication.com",
-    "google-analytics.com",
-    "adcolony.com",
-    "ads.facebook.com",
-    "tapjoy.com",
-    "unityads.com",
-    "vungle.com",
-    "mopub.com",
-    "amazon-adsystem.com",
-    "inmobi.com",
-    "startappservice.com",
-    "applovin.com",
-    "ironsrc.com",
-    "sigmob.com",
-    "kwad.com",
-    "bytecdn.cn",
-    "bytedance.com",
-    "bdstatic.com",
-    "tanx.com",
-    "aliyuncs.com",
-    "umeng.com",
-    "umengcloud.com",
-    "ucweb.com",
-    "uc.cn",
-    "qq.com",
-    "gtimg.com",
-    "qpic.cn"
+    // Google广告网络
+    "doubleclick.net", "googleadservices.com", "googlesyndication.com",
+    "google-analytics.com", "googleapis.com", "googletagmanager.com",
+    "googletagservices.com", "googleusercontent.com", "gstatic.com",
+    "google.com", "google.ru", "google.cn", "google.com.hk",
+    "2mdn.net", "gvt1.com", "gvt2.com", "gvt3.com",
+    
+    // Facebook广告网络
+    "facebook.com", "fb.com", "fbcdn.net", "fbsbx.com", "instagram.com",
+    "cdninstagram.com", "whatsapp.com", "fbwatch.com", "facebook.net",
+    "fb.me", "messenger.com", "oculus.com",
+    
+    // 腾讯广告网络
+    "qq.com", "gtimg.com", "qpic.cn", "qlogo.cn", "weishi.com",
+    "tencent.com", "tencent-cloud.com", "tencentcs.com", "myqcloud.com",
+    "cdngc.com", "igamecj.com", "dns.pub", "dnspod.com",
+    
+    // 字节跳动广告网络
+    "bytedance.com", "bytecdn.cn", "byteimg.com", "byteacct.com",
+    "byteicdn.com", "toutiao.com", "toutiaocdn.com", "toutiaocdn.net",
+    "toutiaocloud.com", "toutiaocloud.net", "ixigua.com", "snssdk.com",
+    "pstatp.com", "pstatp.com", "amemv.com", "iesdouyin.com",
+    
+    // 百度广告网络
+    "baidu.com", "bdimg.com", "bdstatic.com", "baidustatic.com",
+    "baidupcs.com", "bcebos.com", "bdurl.net", "smartapps.cn",
+    
+    // 阿里巴巴广告网络
+    "alibaba.com", "alicdn.com", "alipay.com", "aliyun.com",
+    "aliyuncs.com", "taobao.com", "tmall.com", "tmall.hk",
+    "uc.cn", "ucweb.com", "umeng.com", "umengcloud.com",
+    
+    // 国际广告平台
+    "amazon-adsystem.com", "a2z.com", "amazon.com", "amazon.cn",
+    "amazontrust.com", "assoc-amazon.com", "media-amazon.com",
+    
+    "mopub.com", "mopub-trk.com", "mopubws.com",
+    
+    "unityads.unity3d.com", "unity3d.com", "unity.com",
+    
+    "vungle.com", "vungle.akadns.net", "vungle-cdn.com",
+    
+    "tapjoy.com", "tapjoyads.com", "tapjoy.go.com",
+    
+    "adcolony.com", "adc3-launch.adcolony.com", "adc3-assets.adcolony.com",
+    
+    "ironsrc.com", "supersonic.com", "ironbeast.io",
+    
+    "applovin.com", "applvn.com", "apploving.com",
+    
+    "chartboost.com", "chartboost.info", "chartboost.net",
+    
+    "inmobi.com", "inmobi.cn", "inmobicdn.net",
+    
+    "startappservice.com", "startappexchange.com", "startapp.com",
+    
+    "ogury.com", "ogury.io", "ogury-core.com",
+    
+    "smaato.com", "smaa.to", "smtad.net",
+    
+    "fyber.com", "inner-active.com", "fyber.vn",
+    
+    "yandex.ru", "yandex.net", "yandex.com", "yandexadexchange.net",
+    
+    "myTarget.ru", "myTarget.com", "target.my.com",
+    
+    "verizon.com", "verizondigitalmedia.com", "vdms.com",
+    
+    // 广告监测与分析
+    "adjust.com", "adjust.io", "adj.st",
+    
+    "appsflyer.com", "appsflyer.xyz", "af-app.com",
+    
+    "branch.io", "bnc.lt", "branch.link",
+    
+    "kochava.com", "kochava.net", "kochava.org",
+    
+    "singular.net", "singular-sdk.com", "sng.link",
+    
+    "tenjin.io", "tenjin.com", "tenjindash.com",
+    
+    "appmetrica.yandex.com", "appmetrica.yandex.ru", "appmetrica.yandex.net",
+    
+    "firebase.com", "firebaseio.com", "googleapis.com",
+    
+    "flurry.com", "yahoofs.com", "yimg.com",
+    
+    "mixpanel.com", "mxpnl.com", "mxpnl.net",
+    
+    "amplitude.com", "amplitude.ninja", "amplitude-user-content.com",
+    
+    "leanplum.com", "leanplum.xyz", "leanplum.fun",
+    
+    "localytics.com", "localytics.xyz", "llx.plus",
+    
+    "countly.com", "countly.io", "countly.net",
+    
+    // 其他常见广告域名
+    "scorecardresearch.com", "quantserve.com", "quantcount.com",
+    
+    "rubiconproject.com", "rubicon.com", "rlcdn.com",
+    
+    "openx.net", "openx.com", "servedbyopenx.com",
+    
+    "pubmatic.com", "pubmine.com", "pubnative.net",
+    
+    "indexexchange.com", "indexww.com", "indextools.com",
+    
+    "sonobi.com", "sonobinet.com", "sonobi.trk.com",
+    
+    "taboola.com", "taboolasyndication.com", "taboola.vn",
+    
+    "outbrain.com", "outbrainimg.com", "outbrain.org",
+    
+    "revcontent.com", "revcontent.net", "revrtb.com",
+    
+    "zemanta.com", "zemanta.net", "zemanda.com",
+    
+    "nativo.com", "native.com", "ntv.io",
+    
+    "sharethrough.com", "sharethrough.org", "sharethrough.xyz",
+    
+    "triplelift.com", "3lift.com", "triple.lift",
+    
+    "teads.com", "teads.tv", "teads.net",
+    
+    "smartadserver.com", "smartadserver.net", "sascdn.com",
+    
+    "aerserv.com", "aerserv.net", "aerserv.xyz",
+    
+    "moat.com", "moatads.com", "moatpixel.com",
+    
+    "integralads.com", "integral.com", "adsafeprotected.com",
+    
+    "sovrn.com", "sovrn.org", "sovrn.xyz",
+    
+    "conversantmedia.com", "conversant.com", "conversant.vn",
+    
+    "rhythmone.com", "rhythmx.com", "r1-cdn.net",
+    
+    "spotxchange.com", "spotx.tv", "spotxcdn.com",
+    
+    "stickyadstv.com", "sticky.com", "stickyads.tv",
+    
+    "tremorhub.com", "tremorvideo.com", "tremor.com",
+    
+    "videologygroup.com", "videology.com", "vidible.com",
+    
+    "yieldmo.com", "yieldmo.net", "yieldmo.org",
+    
+    "yieldlab.net", "yieldlab.com", "yieldlab.de",
+    
+    "adform.com", "adform.net", "adform.org",
+    
+    "criteo.com", "criteo.net", "criteocdn.com",
+    
+    "mediarithmics.com", "mediarithmics.net", "mediarithmics.org",
+    
+    "sizmek.com", "sizmek.net", "sizmek.org",
+    
+    "smadex.com", "smadex.net", "smadex.org",
+    
+    "adition.com", "adition.net", "adition.org",
+    
+    "emxdgt.com", "emxdigital.com", "emx.vn",
+    
+    "synacor.com", "synacor.net", "synacor.org",
+    
+    "trustx.org", "trustx.com", "trustx.net",
+    
+    "unicorn.com", "unicorn.net", "unicorn.org",
+    
+    "widespace.com", "widespace.net", "widespace.org",
+    
+    "xad.com", "xad.net", "xad.org",
+    
+    "yieldone.com", "yieldone.net", "yieldone.org",
+    
+    "zeotap.com", "zeotap.net", "zeotap.org",
+    
+    "adlightning.com", "adlightning.net", "adlightning.org",
+    
+    "adsafety.net", "adsafety.org", "adsafety.com",
+    
+    "adhigh.net", "adhigh.org", "adhigh.com",
+    
+    "adnxs.com", "adnxs.net", "adnxs.org",
+    
+    "adsrvr.org", "adsrvr.com", "adsrvr.net",
+    
+    "adtech.com", "adtech.de", "adtech.us",
+    
+    "advertising.com", "advertising.net", "advertising.org",
+    
+    "affiliate.com", "affiliate.net", "affiliate.org",
+    
+    "atomx.com", "atomx.net", "atomx.org",
+    
+    "bidswitch.net", "bidswitch.com", "bidswitch.org",
+    
+    "brightcom.com", "brightcom.net", "brightcom.org",
+    
+    "casalemedia.com", "casalemedia.net", "casalemedia.org",
+    
+    "connectad.io", "connectad.net", "connectad.org",
+    
+    "contextweb.com", "contextweb.net", "contextweb.org",
+    
+    "cpx.to", "cpx.net", "cpx.org",
+    
+    "creative-serving.com", "creative-serving.net", "creative-serving.org",
+    
+    "crypta.com", "crypta.net", "crypta.org",
+    
+    "districtm.io", "districtm.net", "districtm.org",
+    
+    "dotomi.com", "dotomi.net", "dotomi.org",
+    
+    "doubleverify.com", "doubleverify.net", "doubleverify.org",
+    
+    "e-planning.net", "e-planning.com", "e-planning.org",
+    
+    "e-volution.ai", "e-volution.net", "e-volution.org",
+    
+    "emetriq.com", "emetriq.net", "emetriq.org",
+    
+    "engagemobi.com", "engagemobi.net", "engagemobi.org",
+    
+    "erne.co", "erne.net", "erne.org",
+    
+    "everesttech.net", "everesttech.com", "everesttech.org",
+    
+    "exelator.com", "exelator.net", "exelator.org",
+    
+    "exponential.com", "exponential.net", "exponential.org",
+    
+    "fout.jp", "fout.net", "fout.org",
+    
+    "gemini.yahoo.com", "gemini.net", "gemini.org",
+    
+    "geniee.jp", "geniee.net", "geniee.org",
+    
+    "gumgum.com", "gumgum.net", "gumgum.org",
+    
+    "imrworldwide.com", "imrworldwide.net", "imrworldwide.org",
+    
+    "insightexpressai.com", "insightexpressai.net", "insightexpressai.org",
+    
+    "intentiq.com", "intentiq.net", "intentiq.org",
+    
+    "kargo.com", "kargo.net", "kargo.org",
+    
+    "kiosked.com", "kiosked.net", "kiosked.org",
+    
+    "kixer.com", "kixer.net", "kixer.org",
+    
+    "lkqd.com", "lkqd.net", "lkqd.org",
+    
+    "loopme.com", "loopme.net", "loopme.org",
+    
+    "media.net", "media.org", "media.com",
+    
+    "mediamath.com", "mediamath.net", "mediamath.org",
+    
+    "meetrics.com", "meetrics.net", "meetrics.org",
+    
+    "mgid.com", "mgid.net", "mgid.org",
+    
+    "mobicow.com", "mobicow.net", "mobicow.org",
+    
+    "nativeads.com", "nativeads.net", "nativeads.org",
+    
+    "netseer.com", "netseer.net", "netseer.org",
+    
+    "nrich.ai", "nrich.net", "nrich.org",
+    
+    "ondevice.com", "ondevice.net", "ondevice.org",
+    
+    "onesignal.com", "onesignal.net", "onesignal.org",
+    
+    "open8.com", "open8.net", "open8.org",
+    
+    "opera.com", "opera.net", "opera.org",
+    
+    "outbrain.com", "outbrain.net", "outbrain.org",
+    
+    "pixels.asia", "pixels.net", "pixels.org",
+    
+    "plista.com", "plista.net", "plista.org",
+    
+    "powerlinks.com", "powerlinks.net", "powerlinks.org",
+    
+    "propellerads.com", "propellerads.net", "propellerads.org",
+    
+    "publift.com", "publift.net", "publift.org",
+    
+    "pulsepoint.com", "pulsepoint.net", "pulsepoint.org",
+    
+    "quantcast.com", "quantcast.net", "quantcast.org",
+    
+    "rayjump.com", "rayjump.net", "rayjump.org",
+    
+    "readpeak.com", "readpeak.net", "readpeak.org",
+    
+    "redintelligence.net", "redintelligence.com", "redintelligence.org",
+    
+    "revjet.com", "revjet.net", "revjet.org",
+    
+    "richaudience.com", "richaudience.net", "richaudience.org",
+    
+    "rtk.io", "rtk.net", "rtk.org",
+    
+    "run-syndicate.com", "run-syndicate.net", "run-syndicate.org",
+    
+    "seedingalliance.com", "seedingalliance.net", "seedingalliance.org",
+    
+    "semasio.net", "semasio.com", "semasio.org",
+    
+    "sharethrough.com", "sharethrough.net", "sharethrough.org",
+    
+    "slimcut.com", "slimcut.net", "slimcut.org",
+    
+    "smartclip.com", "smartclip.net", "smartclip.org",
+    
+    "smartstream.com", "smartstream.net", "smartstream.org",
+    
+    "sociomantic.com", "sociomantic.net", "sociomantic.org",
+    
+    "sovrn.com", "sovrn.net", "sovrn.org",
+    
+    "spotxchange.com", "spotxchange.net", "spotxchange.org",
+    
+    "stackadapt.com", "stackadapt.net", "stackadapt.org",
+    
+    "steepto.com", "steepto.net", "steepto.org",
+    
+    "stroeer.com", "stroeer.net", "stroeer.org",
+    
+    "superads.com", "superads.net", "superads.org",
+    
+    "survata.com", "survata.net", "survata.org",
+    
+    "taboola.com", "taboola.net", "taboola.org",
+    
+    "tapad.com", "tapad.net", "tapad.org",
+    
+    "theadex.com", "theadex.net", "theadex.org",
+    
+    "tradedesk.com", "tradedesk.net", "tradedesk.org",
+    
+    "trafficjunky.com", "trafficjunky.net", "trafficjunky.org",
+    
+    "tremorhub.com", "tremorhub.net", "tremorhub.org",
+    
+    "triplelift.com", "triplelift.net", "triplelift.org",
+    
+    "tritondigital.com", "tritondigital.net", "tritondigital.org",
+    
+    "truex.com", "truex.net", "truex.org",
+    
+    "trustarc.com", "trustarc.net", "trustarc.org",
+    
+    "turn.com", "turn.net", "turn.org",
+    
+    "undertone.com", "undertone.net", "undertone.org",
+    
+    "vidoomy.com", "vidoomy.net", "vidoomy.org",
+    
+    "video intelligence.com", "video intelligence.net", "video intelligence.org",
+    
+    "videobyte.com", "videobyte.net", "videobyte.org",
+    
+    "viralize.com", "viralize.net", "viralize.org",
+    
+    "virtualmind.com", "virtualmind.net", "virtualmind.org",
+    
+    "vungle.com", "vungle.net", "vungle.org",
+    
+    "weborama.com", "weborama.net", "weborama.org",
+    
+    "xaxis.com", "xaxis.net", "xaxis.org",
+    
+    "yahoo.com", "yahoo.net", "yahoo.org",
+    
+    "yieldlab.com", "yieldlab.net", "yieldlab.org",
+    
+    "yieldmo.com", "yieldmo.net", "yieldmo.org",
+    
+    "yieldone.com", "yieldone.net", "yieldone.org",
+    
+    "yieldr.com", "yieldr.net", "yieldr.org",
+    
+    "zeotap.com", "zeotap.net", "zeotap.org",
+    
+    "zergnet.com", "zergnet.net", "zergnet.org"
   ],
   
   "splash_activity_patterns": [
-    ".*Splash.*",
-    ".*AdActivity",
-    ".*Launch.*",
-    ".*Welcome.*",
-    ".*Guide.*",
-    ".*MainActivity",
-    ".*ads.*",
-    ".*splash.*",
-    ".*tt_splash.*",
-    ".*ks_splash.*",
-    ".*gdt_splash.*"
+    ".*Splash.*", ".*AdActivity", ".*Launch.*", ".*Welcome.*", ".*Guide.*",
+    ".*MainActivity", ".*ads.*", ".*splash.*", ".*tt_splash.*", ".*ks_splash.*",
+    ".*gdt_splash.*", ".*open.*ad.*", ".*ad.*open.*", ".*AdSplash.*", ".*SplashAd.*",
+    ".*AdWelcome.*", ".*WelcomeAd.*", ".*AdGuide.*", ".*GuideAd.*", ".*AdMain.*",
+    ".*MainAd.*", ".*Advert.*", ".*advert.*", ".*AdScreen.*", ".*ScreenAd.*",
+    ".*AdPage.*", ".*PageAd.*", ".*AdStart.*", ".*StartAd.*", ".*AdInit.*",
+    ".*InitAd.*", ".*AdLoading.*", ".*LoadingAd.*", ".*AdBoot.*", ".*BootAd.*",
+    ".*AdEntry.*", ".*EntryAd.*", ".*AdHome.*", ".*HomeAd.*", ".*AdIntro.*",
+    ".*IntroAd.*", ".*AdLoader.*", ".*LoaderAd.*", ".*AdInitialize.*", ".*InitializeAd.*",
+    ".*AdOpen.*", ".*OpenAd.*", ".*AdEnter.*", ".*EnterAd.*", ".*AdBegin.*",
+    ".*BeginAd.*", ".*AdFirst.*", ".*FirstAd.*", ".*AdPortal.*", ".*PortalAd.*"
   ],
   
   "reinforcement_classes": [
-    "com.stub.StubApp",
-    "com.tencent.StubShell.TxAppEntry",
-    "s.h.e.l.l.S",
-    "com.secshell.secshell.ApplicationWrapper",
-    "com.qihoo.util.Loader",
-    "com.ali.tg.tgbridge.TGBridge",
-    "com.ijiami.v7.SecurityApplication",
-    "com.bangcle.andlz.ZApplication",
-    "com.taobao.shell.application",
-    "com.netqi.bapplication",
-    "com.lexun.shell.application"
+    "com.stub.StubApp", "com.tencent.StubShell.TxAppEntry", "s.h.e.l.l.S",
+    "com.secshell.secshell.ApplicationWrapper", "com.qihoo.util.Loader",
+    "com.ali.tg.tgbridge.TGBridge", "com.ijiami.v7.SecurityApplication",
+    "com.bangcle.andlz.ZApplication", "com.taobao.shell.application",
+    "com.netqi.bapplication", "com.lexun.shell.application", "com.tencent.mm.androlib.Shell",
+    "com.shell.SuperApplication", "com.protect.startup.MyApplication",
+    "com.secneo.guard.ApplicationWrapper", "com.nqsoft.shell.NqSoftShell",
+    "com.apkprotect.a", "com.shell.main", "com.shell.ShellApplication",
+    "com.tencent.embed.Main", "com.tencent.mobileqq.sec.BaseApplication",
+    "com.tencent.mobileqq.sec.SecShell", "com.tencent.qqmusic.sec.BaseApplication",
+    "com.netease.cloudmusic.sec.BaseApplication", "com.kugou.player.sec.BaseApplication",
+    "com.cleanmaster.mguard.sec.BaseApplication", "com.qihoo.security.sec.BaseApplication",
+    "com.duokan.phone.remotecontroller.sec.BaseApplication", "com.sdu.didi.psnger.sec.BaseApplication",
+    "com.ubercab.sec.BaseApplication", "com.squareup.cash.sec.BaseApplication",
+    "com.antivirus.sec.BaseApplication", "com.cleanmaster.security.sec.BaseApplication",
+    "com.cmsecurity.sec.BaseApplication", "com.kingroot.kinguser.sec.BaseApplication",
+    "com.kingoapp.root.sec.BaseApplication", "com.noshufou.android.su.sec.BaseApplication"
   ],
   
   "excluded_packages": [
-    "com.pocket.topbrowser",
-    "com.speedplus.daishu",
-    "com.heysocks.android",
-    "com.ymys.tv",
-    "com.tv.ok2",
-    "com.jushispoc.rxjyapp",
-    "com.duapps.recorder",
-    "com.mianyuxiaopu.app",
-    "app.zjc.www",
-    "com.jigongbao.jgbapp",
-    "com.errpbc.bvh",
-    "com.tube.client",
-    "com.instagram.android",
-    "com.facebook.katana",
-    "com.twitter.android",
-    "com.whatsapp",
-    "com.tencent.mm",
-    "com.uc.browser",
-    "com.qihoo.browser"
+    "com.pocket.topbrowser", "com.speedplus.daishu", "com.heysocks.android",
+    "com.ymys.tv", "com.tv.ok2", "com.jushispoc.rxjyapp", "com.duapps.recorder",
+    "com.mianyuxiaopu.app", "app.zjc.www", "com.jigongbao.jgbapp",
+    "com.errpbc.bvh", "com.tube.client", "com.instagram.android",
+    "com.facebook.katana", "com.twitter.android", "com.whatsapp",
+    "com.tencent.mm", "com.uc.browser", "com.qihoo.browser", "com.android.chrome",
+    "com.google.android.youtube", "com.google.android.apps.maps",
+    "com.google.android.gm", "com.netflix.mediaclient", "com.spotify.music",
+    "com.amazon.mShop.android.shopping", "com.ebay.mobile", "com.alibaba.aliexpresshd",
+    "com.zhiliaoapp.musically", "com.snapchat.android", "com.linkedin.android",
+    "com.pinterest", "com.reddit.frontpage", "com.dropbox.android",
+    "com.microsoft.office.word", "com.adobe.reader", "com.tencent.qqmusic",
+    "com.netease.cloudmusic", "com.kugou.player", "com.cleanmaster.mguard",
+    "com.qihoo.security", "com.duokan.phone.remotecontroller",
+    "com.sdu.didi.psnger", "com.ubercab", "com.squareup.cash",
+    "com.antivirus", "com.cleanmaster.security", "com.cmsecurity",
+    "com.kingroot.kinguser", "com.kingoapp.root", "com.noshufou.android.su",
+    "com.google.android.apps.photos", "com.google.android.apps.docs",
+    "com.google.android.apps.drive", "com.google.android.calendar",
+    "com.google.android.keep", "com.google.android.talk",
+    "com.google.android.apps.messaging", "com.google.android.videos",
+    "com.google.android.music", "com.google.android.apps.books",
+    "com.google.android.apps.translate", "com.google.android.apps.magazines",
+    "com.google.android.apps.tachyon", "com.google.android.apps.wellbeing",
+    "com.google.android.apps.fitness", "com.google.android.apps.walletnfcrel",
+    "com.google.android.apps.googleassistant", "com.google.android.apps.subscriptions.red",
+    "com.google.android.apps.nbu.files", "com.google.android.apps.recorder",
+    "com.google.android.apps.podcasts", "com.google.android.apps.restore",
+    "com.google.android.apps.pixelmigrate", "com.google.android.apps.pixellens",
+    "com.google.android.apps.work.clouddpc", "com.google.android.apps.work.profile",
+    "com.google.android.apps.accessibility.voiceaccess", "com.google.android.apps.accessibility.voiceaccess.training",
+    "com.google.android.apps.accessibility.voiceaccess.setup", "com.google.android.apps.accessibility.voiceaccess.voicesettings",
+    "com.google.android.apps.accessibility.voiceaccess.homescreen", "com.google.android.apps.accessibility.voiceaccess.notifications",
+    "com.google.android.apps.accessibility.voiceaccess.voicecommands", "com.google.android.apps.accessibility.voiceaccess.voicefeedback",
+    "com.google.android.apps.accessibility.voiceaccess.voiceinput", "com.google.android.apps.accessibility.voiceaccess.voiceoutput",
+    "com.google.android.apps.accessibility.voiceaccess.voicesearch", "com.google.android.apps.accessibility.voiceaccess.voicetraining",
+    "com.google.android.apps.accessibility.voiceaccess.voiceutils", "com.google.android.apps.accessibility.voiceaccess.voicewidgets"
   ]
 }
