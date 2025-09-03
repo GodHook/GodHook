@@ -1,4 +1,4 @@
-latest_version=0.0.6
-latest_version_code=6
+latest_version=0.0.7
+latest_version_code=7
 download_url=https://www.123684.com/s/jA3ZVv-SOx6H
 update_log=版本 0.0.7(2025-09-03)\n\n适配应用\n新增\n•123云盘-去除广告(版本:2.6.2)\n•瓜萌视频-去除广告(版本:1.0.6)\n•七猫免费小说-解锁会员(版本:7.79)\n\n回调\n•OK影视2
