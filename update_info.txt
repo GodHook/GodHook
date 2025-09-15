@@ -1,4 +1,4 @@
 latest_version=0.0.9
 latest_version_code=9
-download_url=https://www.123684.com/s/jA3ZVv-SOx6H
+download_url=https://github.com/Xposed-Modules-Repo/com.wengui.hook
 update_log=版本 0.0.9(2025-09-09)\n\n套壳通杀\n漫画：美漫园、漫千绘等\n影视1：漫漫国、紫金草等\n影视2：追番达人、布雷4k等\n影视3：仓鼠4K、4K剧下饭等\n详细内容请前往通杀说明查看\n\n适配应用\n新增\n•123云盘-去除广告/1元享弹窗(版本:2.6.3)\n•美漫园-去除广告(理论通杀)\n•布雷4K-解锁会员(理论通杀)\n•4K剧下饭-解锁会员(理论通杀)\n•仓鼠4K-解锁会员(理论通杀)\n•K2er-解锁终身VIP(理论通杀)\n•搜狗输入法-解锁会员(版本:12.18.0)\n•橘汁-去除广告(适配多包名)\n•剧永久影视-拦截更新弹窗\n•追番达人-解锁会员(3.8.1→理论通杀)\n•七猫免费小说-解锁会员(7.79→7.80)
