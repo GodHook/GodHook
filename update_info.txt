@@ -1,4 +1,4 @@
-latest_version=0.0.9
-latest_version_code=9
+latest_version=0.1
+latest_version_code=10
 download_url=https://github.com/Xposed-Modules-Repo/com.wengui.hook
 update_log=版本 0.1(2025-09-29)\n\n适配应用\n新增\n•速搜视频-去除广告(目前理论通杀)\n•追忆影视-去除广告(理论通杀)\n•蓝鹰-解锁会员(理论通杀)\n•爱影视-解锁会员(理论通杀)\n•云云视频-解锁会员(理论通杀)\n•123动漫-解锁会员(理论通杀)\n•小熊录屏-去除会员限制(2.4.8.3→2.4.8.4)\n•搜狗输入法-解锁会员(12.18.0→12.21.0)\n•设备信息by流舟-解锁会员(v2.10.0.0→v3.0.0.0)\n•七猫免费小说-解锁会员(7.80→7.81)\n\n移除\n•TubeVPN\n\n调整\n•模块名字GodHook→Deer God\n•关键词拦截dialog弹窗→弹窗定位\n•123云盘-仅去除开屏广告(理论通杀)\n•优化部分UI和流畅度\n\n修复\n•修复虚拟机环境闪退问题
